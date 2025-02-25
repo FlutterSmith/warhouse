@@ -3,6 +3,7 @@ import 'package:svg_flutter/svg.dart';
 import 'package:war_house/core/utils/app_colors.dart';
 import 'package:war_house/core/utils/app_images.dart';
 import 'package:war_house/core/widgets/custom_button.dart';
+import 'package:war_house/features/auth/presentation/views/login_view.dart';
 import 'package:war_house/features/auth/presentation/views/signup_view.dart';
 
 class SplashViewBody extends StatefulWidget {
@@ -53,7 +54,7 @@ class _SplashViewBodyState extends State<SplashViewBody> {
           ),
           CustomButton(
             onPressed: () {
-              Navigator.pushReplacementNamed(context, SignupView.routeName);
+              Navigator.pushReplacementNamed(context, LoginView.routeName);
             },
             text: 'Get Started',
             backgroundColor: Colors.white,

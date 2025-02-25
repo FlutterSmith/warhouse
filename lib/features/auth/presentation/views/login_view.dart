@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:war_house/core/widgets/custom_app_bar.dart';
+import 'package:war_house/features/auth/presentation/views/widgets/login_view_body.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -14,14 +15,5 @@ class LoginView extends StatelessWidget {
           title: 'تسجيل دخول',
         ),
         body: LoginViewBody());
-  }
-}
-
-class LoginViewBody extends StatelessWidget {
-  const LoginViewBody({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
