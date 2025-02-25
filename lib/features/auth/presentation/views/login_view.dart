@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:war_house/core/widgets/custom_app_bar.dart';
 
@@ -9,13 +8,20 @@ class LoginView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
         appBar: buildAppBar(
           context,
           title: 'تسجيل دخول',
         ),
-        body: 
-      
-    );
+        body: LoginViewBody());
+  }
+}
+
+class LoginViewBody extends StatelessWidget {
+  const LoginViewBody({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
