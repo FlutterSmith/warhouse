@@ -1,0 +1,78 @@
+name: war_house
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Localization
+  flutter_localizations:
+        sdk: flutter
+
+  # State Management & Dependency Injection
+  dartz: ^0.10.1
+  get_it: ^8.0.0
+
+  # UI & Assets Handling
+  cupertino_icons: ^1.0.8
+  modal_progress_hud_nsn: ^0.5.1
+  skeletonizer: ^1.4.3
+  svg_flutter: ^0.0.1
+
+  # Storage & Preferences
+  shared_preferences: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.1
+  flutter_svg: ^2.0.10+1
+  dots_indicator: ^3.0.0
+
+flutter:
+    # ✅ REQUIRED for localization code generation
+  uses-material-design: true
+
+  assets:
+    - assets/logo.svg
+    - assets/image.png
+
+    - assets/images/  # Ensure images are inside this folder
+    - assets/fonts/
+
+  fonts:
+    - family: InknutAntiqua
+      fonts:
+        - asset: assets/fonts/InknutAntiqua-Bold.ttf
+          weight: 700
+
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Regular.ttf
+        - asset: assets/fonts/Cairo-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Cairo-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Cairo-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Cairo-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Cairo-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Cairo-SemiBold.ttf
+          weight: 600
+
+flutter_intl:
+  enabled: true
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  min_sdk_android: 21
